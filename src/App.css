@@ -1,5 +1,81 @@
 .App {
   text-align: center;
+  color: black;
+}
+
+.employee-card {
+  background-color: rgb(231, 223, 223);
+  border-radius: 10px;
+  width: 12rem;
+  height: 13rem;
+  margin: 1rem;
+  display: inline-block;
+}
+
+.employee-avatar {
+  border-radius: 50%;
+  margin-top: 1.5rem;
+  height: 6rem;
+  width: 6rem;
+}
+
+.page-link {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+.page-link:hover {
+  background-color: rgb(218, 224, 224);
+  box-shadow: 2px 2px 5px #150801;
+}
+
+.contact-link {
+  background-color: #61dafb;
+  border: none;
+}
+
+.contact-link:hover {
+  box-shadow: 2px 2px 5px #150801;
+}
+
+/* Popup container */
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.popup-inner {
+  position: relative;
+  padding: 32px;
+  width: 100%;
+  max-width: 640px;
+  background-color: #fff;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .App-logo {
